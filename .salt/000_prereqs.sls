@@ -16,6 +16,8 @@ prepreqs-{{cfg.name}}:
       - sqlite3
       - liblcms2-2
       - liblcms2-dev
+      - libcairomm-1.0-dev
+      - libcairo2-dev
       - libsqlite3-dev
       - apache2-utils
       - autoconf
@@ -23,6 +25,8 @@ prepreqs-{{cfg.name}}:
       - build-essential
       - bzip2
       - gettext
+      - libpq-dev
+      - libmysqlclient-dev
       - git
       - groff
       - libbz2-dev
@@ -56,7 +60,9 @@ prepreqs-{{cfg.name}}:
       - tcl8.5
       - tcl8.5-dev
       - tk8.5-dev
-      - zlib1g-dev      
+      - cython
+      - python-numpy
+      - zlib1g-dev
 
 {{cfg.name}}-dirs:
   file.directory:
