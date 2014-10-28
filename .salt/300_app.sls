@@ -72,6 +72,7 @@ user-{{cfg.name}}-{{admin}}:
     - source: ""
     - cwd: {{data.app_root}}
     - template: jinja
+    - template: jinja
     - user: {{cfg.user}}
     - watch:
       - file: {{cfg.name}}-config
@@ -106,6 +107,7 @@ superuser-{{cfg.name}}-{{admin}}:
     - template: jinja
     - user: {{cfg.user}}
     - group: {{cfg.group}}
+    - template: jinja
     - name: "{{data.app_root}}/salt_{{admin}}_password.py"
     - watch:
       - file: {{cfg.name}}-config
