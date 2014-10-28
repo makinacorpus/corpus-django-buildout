@@ -15,6 +15,7 @@
 makina-projects.projectname:
   data:
     PROJECT: mysite
+    htaccess: "/etc/{name}.webaccess"
     SITE_ID: 1
     app_root: "{project_root}/{PROJECT}"
     py_root: "{project_root}"
