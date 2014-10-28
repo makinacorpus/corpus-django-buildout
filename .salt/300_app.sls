@@ -71,6 +71,7 @@ user-{{cfg.name}}-{{admin}}:
     - group: {{cfg.group}}
     - source: ""
     - cwd: {{data.app_root}}
+    - template: jinja
     - user: {{cfg.user}}
     - watch:
       - file: {{cfg.name}}-config
@@ -102,6 +103,7 @@ superuser-{{cfg.name}}-{{admin}}:
                 if os.path.isfile("{{data.app_root}}/salt_{{admin}}_password.py"):
                     os.unlink("{{data.app_root}}/salt_{{admin}}_password.py")
     - mode: 700
+    - template: jinja
     - user: {{cfg.user}}
     - group: {{cfg.group}}
     - name: "{{data.app_root}}/salt_{{admin}}_password.py"
